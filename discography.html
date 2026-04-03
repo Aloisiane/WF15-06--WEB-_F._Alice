@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="ベルギーの歌手アンジェルのアルバム紹介ページ。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アンジェルのアルバム</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="album-page">
+  <header class="site-header" aria-label="サイトヘッダー" style="background-color:#871a17;">
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <a class="brand" href="index.html" aria-label="ホームへ">
+        <img src="image/LogoAngeleGquitourne.gif" alt="Angèle ロゴ" loading="lazy">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-label="ホーム">
+          <img class="nav-icon nav-icon--home" src="image/logoMenuHomeSansEcrit.png" alt="ホームページ" loading="lazy">
+        </a>
+        <a href="biography.html" data-label="バイオ">
+          <img class="nav-icon nav-icon--bio" src="image/BioAngeleRougeSansEcrit.png" alt="バイオグラフィー" loading="lazy">
+        </a>
+        <a href="discography.html" data-label="ディスコ">
+          <img class="nav-icon nav-icon--disc" src="image/logoVinilRougeSansEcrit.png" alt="ディスコグラフィー" loading="lazy">
+        </a>
+        <a href="empowerment.html" data-label="エンパワー">
+          <img class="nav-icon nav-icon--emp" src="image/logoPoingRougeSansEcris.png" alt="エンパワーメント" loading="lazy">
+        </a>
+        <a href="store.html" data-label="ストア" aria-label="ストアへ">
+          <img class="nav-icon" src="image/logoMenuStoreBlanc.png" alt="ストア" loading="lazy">
+        </a>
+        <!-- Liens réseaux sociaux -->
+        <div class="social-links">
+          <a href="https://www.youtube.com/channel/UCiP2tOO8zRo47GFd5rc8rkA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <img src="image/YoutlogoBla.png" alt="YouTube" loading="lazy">
+          </a>
+          <a href="https://www.instagram.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="image/instalogoBlanc.png" alt="Instagram" loading="lazy">
+          </a>
+          <a href="https://x.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src="image/TwlogoBlanc.png" alt="Twitter" loading="lazy">
+          </a>
+          <a href="https://www.facebook.com/angeleouenpoudre" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="image/FacebooklogoBl.png" alt="Facebook" loading="lazy">
+          </a>
+          <a href="https://www.tiktok.com/@angele_vl" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <img src="image/TikToklogoBlanc.png" alt="TikTok" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </nav>
+ 
+  </header>
+
+  <main class="main-album">
+    <!-- H1 masqué pour SEO/Accessibilité -->
+    <h1 class="sr-only">アンジェルのアルバム</h1>
+
+    <section class="album-grid">
+      <div class="album-card">
+        <img src="image/AlbumBrol2.png" alt="Brol（2018年）" loading="lazy">
+        <div class="album-info">
+          <h2>Brol（ブロール）</h2>
+          <p>2018年にリリースされたアンジェルのデビューアルバム。</p>
+          <a class="button" href="https://open.spotify.com/album/6qA3lPAJxyjZDHzTcf4sLk" target="_blank" rel="noopener noreferrer">聴く</a>
+
+          <div class="song-container">
+            <div class="song-controls">
+              <button type="button" data-album="brol" data-dir="prev" aria-label="前の曲">←</button>
+              <div class="song-title" id="brol-title">Balance ton quoi</div>
+              <button type="button" data-album="brol" data-dir="next" aria-label="次の曲">→</button>
+            </div>
+            <div id="brol-lyrics" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="album-card">
+        <img src="image/AlbumDeuxdeux.png" alt="Nonante-Cinq（2021年）" loading="lazy">
+        <div class="album-info">
+          <h2>Nonante-Cinq（ノナント・サンク）</h2>
+          <p>2021年リリース。アンジェルの2枚目のアルバムで、より成熟した内容が特徴です。</p>
+          <a class="button" href="https://open.spotify.com/album/3V9cJkXiFSN4CwOug6b1Jp" target="_blank" rel="noopener noreferrer">聴く</a>
+
+          <div class="song-container">
+            <div class="song-controls">
+              <button type="button" data-album="nonante" data-dir="prev" aria-label="前の曲">←</button>
+              <div class="song-title" id="nonante-title">Bruxelles je t’aime</div>
+              <button type="button" data-album="nonante" data-dir="next" aria-label="次の曲">→</button>
+            </div>
+            <div id="nonante-lyrics" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dictionary" style="box-sizing: content-box !important;">
+      <h2>フランス語 → 日本語 辞書</h2>
+      <p>フランス語の単語を入力して、日本語の意味を調べてみよう！</p>
+      <input type="text" id="lookupWord" placeholder="フランス語の言葉を入力してください。" aria-label="フランス語の単語を入力">
+      <button type="button" id="translateBtn" aria-label="翻訳する">翻訳する</button>
+      <div id="translationResult" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer aria-label="フッター">
+    <div class="footer-card" style="background-color:#871a17;">
+      <p>© <span id="year"></span> アンジェル. All rights reserved.</p>
+      <div>
+        <a class="btn btn-footer" href="index.html">ホームページ</a>
+        <a class="btn btn-footer" href="biography.html">バイオグラフィー</a>
+        <a class="btn btn-footer" href="discography.html">ディスコグラフィー</a>
+        <a class="btn btn-footer" href="empowerment.html">エンパワーメント</a>
+        <a class="btn btn-footer" href="store.html">ストア</a>
+      </div>
+
+      <!-- Liens réseaux sociaux -->
+      <div class="social-links-footer">
+        <a href="https://www.youtube.com/channel/UCiP2tOO8zRo47GFd5rc8rkA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="image/YoutlogoBla.png" alt="YouTube" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="image/instalogoBlanc.png" alt="Instagram" loading="lazy">
+        </a>
+        <a href="https://x.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="image/TwlogoBlanc.png" alt="Twitter" loading="lazy">
+        </a>
+        <a href="https://www.facebook.com/angeleouenpoudre" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="image/FacebooklogoBl.png" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://www.tiktok.com/@angele_vl" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="image/TikToklogoBlanc.png" alt="TikTok" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" aria-label="トップへ戻る" style="display:none;" type="button">
+    <img src="image/flechesVinilRouge.png" alt="" aria-hidden="true" loading="lazy">
+    <span class="sr-only">トップへ戻る</span>
+  </button>
+
+  <!-- Scripts en bas de page -->
+  <script>
+    // --- Données des chansons ---
+    const brolSongs = [
+      { title: "Balance ton quoi", lyrics: [
+        ["Balance ton quoi", "バロンス トン クワ", "何言ってんのよ"],
+        ["Même si tu parles mal des filles", "メム スィ トゥ パル マル デ フィーユ", "女の子を悪く言っても"],
+        ["Je sais qu'au fond t'as compris", "ジュ セ コ フォン タ コンプリ", "本当はわかってるでしょ"],
+        ["Balance ton quoi", "バロンス トン クワ", "何言ってんのよ"],
+        ["Un jour peut-être ça changera", "アン ジュール プ タエトゥ サ シャンジュラ", "いつかきっと変わるかもね"]
+      ]},
+      { title: "La Thune", lyrics: [
+        ["On veut de l'amour, on veut de l'argent", "オン ヴ ドゥ ラムール オン ヴ ドゥ ラルジャン", "愛が欲しい、お金も欲しい"],
+        ["Mais faut bien qu'on mange", "メ フォ ビアン コン マンジュ", "でも食べなきゃ生きていけないし"],
+        ["On veut du fun, on veut des likes", "オン ヴ デュ ファン オン ヴ デ ライク", "楽しさが欲しい、いいねも欲しい"],
+        ["Mais faut bien qu'on change", "メ フォ ビアン コン シャンジュ", "でも変わらなきゃね"]
+      ]}
+    ];
+
+    const nonanteSongs = [
+      { title: "Bruxelles je t’aime", lyrics: [
+        ["Bruxelles je t'aime", "ブリュクセル ジュ テーム", "ブリュッセル、愛してるよ"],
+        ["Tu me manquais depuis le premier janvier", "テュ ム マンケ デュピュイ ル プルミエ ジャンヴィエ", "1月1日からずっと会いたかった"],
+        ["D'ailleurs je t'ai pas souhaité la bonne année", "ダイユール ジュ テ パ スエテ ラ ボンナネ", "そういえば新年の挨拶もしてなかったね"],
+        ["Je voulais pas te déranger", "ジュ ヴレ パ トゥ デランジェ", "邪魔したくなかったから"],
+        ["Bruxelles je t'aime", "ブリュクセル ジュ テーム", "ブリュッセル、愛してる"],
+        ["Je t'aime, je t'aime", "ジュ テーム ジュ テーム", "本当に、愛してる"]
+      ]},
+      { title: "Libre", lyrics: [
+        ["J'suis pas très douée pour les plans", "ジュ スュイ パ トレ ドゥエ プール レ プラン", "私は計画立てるのがあまり得意じゃないの"],
+        ["Moi j'fais confiance au vent", "モア ジュ フェ コンフィアンス オ ヴァン", "風に任せるのが好き"],
+        ["Libre comme je l'étais avant", "リーブル コム ジュ レテ アヴァン", "昔のように自由でいたい"],
+        ["Avant qu'on m'apprenne à marcher droit", "アヴァン コン マプレン ア マルシェ ドロワ", "まっすぐ歩けと言われる前のように"]
+      ]}
+    ];
+
+    let currentBrolIndex = 0;
+    let currentNonanteIndex = 0;
+
+    function renderLyrics(albumId) {
+      let songs, index;
+      if (albumId === 'brol') { songs = brolSongs; index = currentBrolIndex; }
+      else if (albumId === 'nonante') { songs = nonanteSongs; index = currentNonanteIndex; }
+      const song = songs[index];
+      const lyricsDiv = document.getElementById(`${albumId}-lyrics`);
+      const titleDiv = document.getElementById(`${albumId}-title`);
+      if (!lyricsDiv || !titleDiv) return;
+      titleDiv.textContent = song.title;
+      let html = '<table class="lyrics-table"><thead><tr><th>フランス語</th><th>カタカナ</th><th>和訳</th></tr></thead><tbody>';
+      song.lyrics.forEach(line => { html += `<tr><td>${line[0]}</td><td>${line[1]}</td><td>${line[2]}</td></tr>`; });
+      html += '</tbody></table>';
+      lyricsDiv.innerHTML = html;
+    }
+
+    function changeSong(albumId, dir) {
+      if (albumId === 'brol') {
+        currentBrolIndex = (currentBrolIndex + (dir === 'next' ? 1 : -1) + brolSongs.length) % brolSongs.length;
+      } else if (albumId === 'nonante') {
+        currentNonanteIndex = (currentNonanteIndex + (dir === 'next' ? 1 : -1) + nonanteSongs.length) % nonanteSongs.length;
+      }
+      renderLyrics(albumId);
+    }
+
+    // Dictionnaire
+    const dictionary = {
+      "amour": "愛（あい）",
+      "libre": "自由（じゆう）",
+      "argent": "お金（おかね）",
+      "chanson": "歌（うた）",
+      "fille": "女の子（おんなのこ）",
+      "femmes": "女性たち（じょせいたち）",
+      "garçon": "男の子（おとこのこ）",
+      "coeur": "心（こころ）",
+      "temps": "時間（じかん）",
+      "ami": "友達（ともだち）",
+      "ville": "町／都市（まち／とし）",
+      "jour": "日（ひ）",
+      "nuit": "夜（よる）",
+      "vent": "風（かぜ）",
+      "voix": "声（こえ）",
+      "vie": "人生／命（じんせい／いのち）",
+      "mort": "死（し）",
+      "pluie": "雨（あめ）",
+      "soleil": "太陽（たいよう）",
+      "étoile": "星（ほし）",
+      "rêve": "夢（ゆめ）",
+      "lumière": "光（ひかり）",
+      "ombre": "影（かげ）",
+      "noir": "黒（くろ）",
+      "blanc": "白（しろ）",
+      "beau": "美しい（うつくしい）",
+      "triste": "悲しい（かなしい）",
+      "heureux": "幸せ（しあわせ）",
+      "mal": "悪／痛み（わるい／いたみ）",
+      "bien": "良い（よい）",
+      "changer": "変える（かえる）",
+      "marcher": "歩く（あるく）",
+      "parler": "話す（はなす）",
+      "écouter": "聞く（きく）",
+      "aimer": "愛する（あいする）／好き（すき）",
+      "penser": "考える（かんがえる）",
+      "vouloir": "欲しい（ほしい）／望む（のぞむ）",
+      "devenir": "〜になる",
+      "comprendre": "理解する（りかいする）",
+      "chanter": "歌う（うたう）",
+      "danser": "踊る（おどる）",
+      "vivre": "生きる（いきる）",
+      "tomber": "落ちる（おちる）",
+      "pleurer": "泣く（なく）",
+      "rire": "笑う（わらう）",
+      "croire": "信じる（しんじる）",
+      "partir": "出発する（しゅっぱつする）",
+      "rester": "残る（のこる）",
+      "venir": "来る（くる）",
+      "aller": "行く（いく）",
+      "regarder": "見る（みる）",
+      "oublier": "忘れる（わすれる）",
+      "moi": "私（わたし）",
+      "toi": "君（きみ）",
+      "nous": "私たち（わたしたち）",
+      "oui": "はい",
+      "non": "いいえ",
+      "possible": "可能（かのう）",
+      "vrai": "本当（ほんとう）",
+      "faux": "嘘（うそ）",
+      "question": "質問（しつもん）",
+      "réponse": "答え（こたえ）",
+      "mensonge": "嘘（うそ）",
+      "justice": "正義（せいぎ）",
+      "violence": "暴力（ぼうりょく）",
+      "avenir": "未来（みらい）",
+      "passé": "過去（かこ）",
+      "présent": "現在（げんざい）",
+      "maintenant": "今（いま）",
+      "toujours": "いつも",
+      "jamais": "決して（けっして）／一度も（いちども）",
+      "parfois": "時々（ときどき）",
+      "souvent": "よく",
+      "déjà": "すでに",
+      "encore": "また／まだ",
+      "trop": "〜すぎる",
+      "pas assez": "足りない（たりない）",
+      "pourquoi": "なぜ／どうして",
+      "parce que": "〜だから／〜ので",
+      "comment": "どうやって",
+      "où": "どこ",
+      "quand": "いつ",
+      "qui": "誰（だれ）",
+      "tous": "全員（ぜんいん）／全部（ぜんぶ）",
+      "personne": "誰も～ない（だれも～ない）",
+      "bonjour": "こんにちは",
+      "salut": "やあ／こんにちは",
+      "bonsoir": "こんばんは",
+      "bonne nuit": "おやすみなさい",
+      "au revoir": "さようなら",
+      "à bientôt": "またね／また近いうちに（ちかいうち）",
+      "merci": "ありがとう／ありがとうございます",
+      "de rien": "どういたしまして",
+      "s'il vous plaît": "お願いします（おねがいします）",
+      "pardon": "ごめんなさい／すみません",
+      "excusez-moi": "失礼します（しつれいします）",
+      "peut-être": "たぶん",
+      "bien sûr": "もちろん",
+      "je ne sais pas": "わかりません",
+      "je comprends": "わかります",
+      "je ne comprends pas": "わかりません",
+      "comment ça va ?": "元気ですか？（げんきですか）",
+      "ça va": "元気です（げんきです）",
+      "je m'appelle": "私の名前は〜です（わたしのなまえは〜です）",
+      "enchanté": "はじめまして",
+      "d'accord": "わかりました／了解（りょうかい）",
+      "à demain": "また明日（またあした）",
+      "je suis désolé": "ごめんなさい／申し訳ありません（もうしわけありません）",
+      "c'est bon": "大丈夫（だいじょうぶ）／美味しい（おいしい）＊文脈による",
+      "très bien": "とても良い（とてもよい）",
+      "pas mal": "悪くない（わるくない）",
+      "félicitations": "おめでとうございます",
+      "bienvenue": "ようこそ",
+      "attention": "気をつけて（きをつけて）",
+      "j'ai faim": "お腹が空いた（おなかがすいた）",
+      "j'ai soif": "喉が渇いた（のどがかわいた）",
+      "où est ... ?": "〜はどこですか？",
+      "combien": "いくら／どのくらい",
+      "quel âge as-tu ?": "何歳ですか？（なんさいですか）",
+      "je t'aime": "愛してる（あいしてる）／好きだよ（すきだよ）"
+    };
+
+    function translateWord() {
+      const input = document.getElementById('lookupWord').value.trim().toLowerCase();
+      const resultDiv = document.getElementById('translationResult');
+      if (!input) { resultDiv.textContent = ''; return; }
+      if (Object.prototype.hasOwnProperty.call(dictionary, input)) {
+        resultDiv.innerHTML = `<strong>${input}</strong> → ${dictionary[input]}`;
+      } else {
+        resultDiv.innerHTML = `❌ Mot inconnu : <strong>${input}</strong><br>（辞書に登録されていません）`;
+      }
+    }
+
+    // Scroll top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      const show = document.documentElement.scrollTop > 300 || document.body.scrollTop > 300;
+      scrollBtn.style.display = show ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Délégation pour les boutons "←" / "→"
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-album][data-dir]');
+      if (!btn) return;
+      changeSong(btn.getAttribute('data-album'), btn.getAttribute('data-dir'));
+    });
+
+    // Init au chargement
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+      renderLyrics('brol');
+      renderLyrics('nonante');
+      document.getElementById('translateBtn').addEventListener('click', translateWord);
+    });
+  </script>
+</body>
+</html>

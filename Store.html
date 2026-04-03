@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アンジェル — ストア</title>
+  <meta name="description" content="アンジェル公式ストア。グッズ購入とコンサートチケット予約。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="store" class="store-theme" style="background:linear-gradient(180deg,#F2D34F,#ffffff); background-repeat:no-repeat; background-size:100% 100%; min-height:100vh;">
+  <header class="site-header" aria-label="サイトヘッダー" style="background-color:#F2D34F;">
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <a class="brand" href="index.html" aria-label="ホーム">
+        <img src="image/LogoAngeleFullBGrosPetitl.gif" alt="Angèle ロゴ" loading="lazy">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-label="ホーム">
+          <img class="nav-icon nav-icon--home" src="image/logoMenuHomeSansEcrit.png" alt="ホームページ" loading="lazy">
+        </a>
+        <a href="biography.html" data-label="バイオ">
+          <img class="nav-icon nav-icon--bio" src="image/visageShop.png" alt="バイオグラフィー" loading="lazy">
+        </a>
+        <a href="discography.html" data-label="ディスコ">
+          <img class="nav-icon nav-icon--disc" src="image/VinilShop.png" alt="ディスコグラフィー" loading="lazy">
+        </a>
+        <a href="empowerment.html" data-label="エンパワー">
+          <img class="nav-icon nav-icon--emp" src="image/logoPoingGoldSansEcris.png" alt="エンパワーメント" loading="lazy">
+        </a>
+        <a href="store.html" data-label="ストア" aria-label="ストアへ">
+          <img class="nav-icon" src="image/logoMenuStoreBlanc.png" alt="ストア" loading="lazy">
+        </a>
+
+        <!-- Liens réseaux sociaux -->
+        <div class="social-links">
+          <a href="https://www.youtube.com/channel/UCiP2tOO8zRo47GFd5rc8rkA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <img src="image/YoutlogoBla.png" alt="YouTube" loading="lazy">
+          </a>
+          <a href="https://www.instagram.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="image/instalogoBlanc.png" alt="Instagram" loading="lazy">
+          </a>
+          <a href="https://x.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src="image/TwlogoBlanc.png" alt="Twitter" loading="lazy">
+          </a>
+          <a href="https://www.facebook.com/angeleouenpoudre" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="image/FacebooklogoBl.png" alt="Facebook" loading="lazy">
+          </a>
+          <a href="https://www.tiktok.com/@angele_vl" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <img src="image/TikToklogoBlanc.png" alt="TikTok" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="store" class="page">
+    <!-- Nuages -->
+    <div class="clouds" aria-hidden="true">
+      <img class="cloud c1" src="image/Dollars.svg" alt="">
+      <img class="cloud c2" src="image/En.svg" alt="">
+      <img class="cloud c3" src="image/euro.svg" alt="">
+      <img class="cloud c4" src="image/yen.svg" alt="">
+      <img class="cloud c5" src="image/AngMo.svg" alt="">
+      <img class="cloud c6" src="image/Dollars.svg" alt="">
+      <img class="cloud c7" src="image/En.svg" alt="">
+      <img class="cloud c8" src="image/yen.svg" alt="">
+      <img class="cloud c9" src="image/euro.svg" alt="">
+      <img class="cloud c10" src="image/AngMo.svg" alt="">
+      <img class="cloud c11" src="image/euro.svg" alt="">
+      <img class="cloud c12" src="image/Yen.svg" alt="">
+      <img class="cloud c13" src="image/En.svg" alt="">
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div>
+          <span class="chip">NEW · オンライン限定</span>
+          <h2 id="hero-title">アンジェル公式ストア</h2>
+          <p>グッズをチェックして、ライブのチケットもここから予約しよう。やさしいイエローの世界でお買い物。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#merch">グッズを見る</a>
+            <!-- corrige l’ancre : il n’existait pas d’ID "ticketsj" -->
+            <a class="btn btn-ghost" href="#tickets-title">チケットへ</a>
+          </div>
+        </div>
+        <div class="cover" role="img" aria-label="明るいステージのイメージ"></div>
+      </section>
+    </div>
+
+    <div class="sections">
+      <!-- MERCH -->
+      <section id="merch" class="section" aria-labelledby="merch-title">
+        <header>
+          <h3 id="merch-title">グッズ</h3>
+          <div class="filters" role="toolbar" aria-label="カテゴリーで絞り込む">
+            <button class="pill" data-filter="all" aria-pressed="true">すべて</button>
+            <button class="pill" data-filter="apparel">アパレル</button>
+            <button class="pill" data-filter="accessory">アクセサリー</button>
+            <button class="pill" data-filter="vinyl">ビニール</button>
+          </div>
+        </header>
+        <div class="body">
+          <div class="grid" id="merch-grid"><!-- JS inject --></div>
+        </div>
+      </section>
+
+      <!-- CART + TICKETS -->
+      <aside class="section" aria-labelledby="cart-title">
+        <header>
+          <h3 id="cart-title">カート</h3>
+          <div style="position:relative;">
+            <span style="padding: 10px;">合計</span>
+            <strong id="cart-total" style="padding: 10px;">€0.00</strong>
+            <button class="btn btn-primary" id="checkout">レジに進む</button>
+            <span class="pill" aria-hidden="true">アイテム数</span>
+            <span id="cart-count" class="badge">0</span>
+          </div>
+        </header>
+        <div class="body cart"></div>
+
+        <header style="margin-top:18px; border-top:1px dashed color-mix(in oklab, var(--primary) 30%, #0000);">
+          <h3 id="tickets-title" style="margin-top:16px">コンサートチケット</h3>
+          <span class="price-pill" id="price-pill">—</span>
+        </header>
+        <div class="body">
+          <form class="ticket-form" id="ticket-form" aria-describedby="tickets-desc">
+            <p id="tickets-desc" class="news-meta">都市と日付を選んでください。</p>
+
+            <div class="field">
+              <label class="label" for="eventj">都市・会場</label>
+              <select id="eventj" name="eventj" required aria-required="true"></select>
+            </div>
+
+            <div class="field">
+              <label class="label" for="date">日付</label>
+              <input id="date" name="date" type="date" required aria-required="true">
+            </div>
+
+            <div class="field">
+              <label class="label" for="qty">枚数</label>
+              <div class="control">
+                <input id="qty" name="qty" type="number" min="1" max="6" value="2">
+               <!-- <span class="selectlike" id="seat-cat" role="listbox" aria-label="カテゴリー">カテゴリー：スタンディング</span> -->
+              </div>
+            </div>
+
+            <div class="total">
+              <span>合計</span>
+              <strong id="total">—</strong>
+            </div>
+
+            <button class="btn btn-primary" type="submit">今すぐ予約</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer aria-label="フッター">
+    <div class="footer-card" style="background-color:#F2D34F;">
+      <p style="color:#ffffff;">© <span id="year"></span> アンジェル. All rights reserved.</p>
+      <div>
+        <a class="btn btn-footer" href="index.html">ホームページ</a>
+        <a class="btn btn-footer" href="biography.html">バイオグラフィー</a>
+        <a class="btn btn-footer" href="discography.html">ディスコグラフィー</a>
+        <a class="btn btn-footer" href="empowerment.html">エンパワーメント</a>
+        <a class="btn btn-footer" href="store.html">ストア</a>
+      </div>
+
+      <!-- Liens réseaux sociaux -->
+      <div class="social-links-footer">
+        <a href="https://www.youtube.com/channel/UCiP2tOO8zRo47GFd5rc8rkA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="image/YoutlogoBla.png" alt="YouTube" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="image/instalogoBlanc.png" alt="Instagram" loading="lazy">
+        </a>
+        <a href="https://x.com/angele_vl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="image/TwlogoBlanc.png" alt="Twitter" loading="lazy">
+        </a>
+        <a href="https://www.facebook.com/angeleouenpoudre" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="image/FacebooklogoBl.png" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://www.tiktok.com/@angele_vl" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="image/TikToklogoBlanc.png" alt="TikTok" loading="lazy">
+        </a>
+      </div>
+
+      <img src="image/AngeleSucetteEuro2.png" alt="アンジェル" class="footer-imagedr footer-image--left" loading="lazy">
+      <img src="image/Thune5.png" alt="アンジェル" class="footer-imagegh footer-image--right" loading="lazy">
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" aria-label="トップへ戻る" type="button">
+    <img src="image/flechesDolars.png" alt="" aria-hidden="true" loading="lazy">
+    <span class="sr-only">トップへ戻る</span>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
